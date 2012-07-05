@@ -37,6 +37,11 @@ $ python setup.py install.
  
 Running bzr --version should tell if the installation is successful or not. 
 
+Also note that :
+You can install Bazaar into home directory, in ~/bin. 
+This method requires that ~/bin is in your $PATH and 
+that ~/lib/python is in your $PYTHONPATH. 
+
 * Introducing Yourself to Bazaar 
 Bazaar records changes to source code, and it records who made the
 change. The person is identified by their name and email address. (If

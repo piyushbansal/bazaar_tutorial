@@ -25,8 +25,8 @@ It is a Distributed version control system , which mean that there is
 no central server that holds an original copy of the project. Every
 machine that happens to have a copy of the project can behave as that
 central server.Hence that project's documentation and source code
-* Getting bazaar on your local machine (Linux guide ,assuming python is already installed )
 remains distributed.Licenced under GPLv2 , bazaar is free to use.
+* Getting bazaar on your local machine (Linux guide ,assuming python is already installed )
 Download bazaar-xxx.tar.gz file from http://wiki.bazaar.canonical.com/Download .
 
 #+BEGIN_EXAMPLE
@@ -41,9 +41,7 @@ Running bzr --version should tell if the installation is successful or not.
 Bazaar records changes to source code, and it records who made the
 change. The person is identified by their name and email address. (If
 you're concerned about spam, you don't need to use a real address that
-you actually read,
-
- but the convention is that it looks like an email
+you actually read,but the convention is that it looks like an email
 address.)
 
 Before working let us tell bazaar who we are .
@@ -67,7 +65,7 @@ Piyush Bansal <piyush.bansal@students.iiit.ac.in>
 Starting a project , would obviously require us to have a repository
 where all our source code , documentation is going to reside.  Let us
 create that repository first and call it 'sample'.It would a
-repository from wheer different developers can create different
+repository from where different developers can create different
 branches to test or modify specific features .
 
 
@@ -113,7 +111,7 @@ the repository.
 
 #+BEGIN_EXAMPLE
 
-$ bzr cmmit -m "added first file with no lines in it"
+$ bzr commit -m "added first file with no lines in it"
 
 #+END_EXAMPLE
 
@@ -183,7 +181,9 @@ Branched xxx revison(s).
 #+END_EXAMPLE
 
 Note that the first part ie lp:~bzr/bzr-someone/trunk was the location
-of branch and ~/bzr-someone/username would be our cloned copy of that
+of branch (in this case it was a lp (launchpad) branch),there are other 
+protocols also supported like bzr+ssh://(branch address).
+Also note ~/bzr-someone/username would be our cloned copy of that
 original branch.
 
 * Updating your branch from the main branch 
@@ -231,4 +231,5 @@ $ bzr help topic
 
 #+END_EXAMPLE
 
- 
+* NOTE: Here is a link to a wonderful bazaar explorer tutorial for windows users
+         http://wtactics.org/wiki/index.php?title=Using_Bazaar_Explorer
